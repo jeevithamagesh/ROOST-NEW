@@ -1,0 +1,131 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+
+body{
+    // background-color: blue;
+     background-color: #3F51B5;
+    font-family: Roboto,sans-serif;
+}
+
+.price-font{
+    font-size: 13px;
+    color: white;
+    padding-left: 5px;
+}
+
+.top {
+    color: #9c9c9c;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.bottom {
+    font-size: 13px;
+    margin: 0 0 5px;
+}
+
+.round-button{
+    cursor: pointer;
+    height:41px;
+    width:41px;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    background: rgba(0,0,0,.1);
+}
+
+.rounded-slid-act{
+    cursor: pointer;
+    border: 0;
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: white;
+}
+
+.rounded-slid-deact{
+    cursor: pointer;
+    border: 0;
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(0,0,0,.2);
+}
+
+.imgClass350{
+    height:350px;
+}
+.imgClass300{
+    height:300px;
+}
+.imgClass250{
+    height:250px;
+}
+.imgClass200{
+    height:200px;
+        // height: 949px;
+}
+.imgClass150{
+    height:150px;
+}
+
+
+.google{
+         width: 26px;
+    height: 24px;
+    margin-top: 1%;
+}
+.twitter{
+            width: 28px;
+    height: 25px;
+    margin-top: 1%;
+}
+.facebook{
+      width: 37px;
+    height: 27px;
+
+    margin-top: 0%;
+}
+.message{
+   width: 28px;
+    height: 25px
+}
+.phone{
+   width: 28px;
+    height: 25px
+}
+.logo{
+        width: 64px;
+    height: 50px;
+    margin-top: 2%;
+}
+.toolbar1{
+    background: #3c4ca9;
+    color: rgba(255,255,255,.87);
+    font-size: 19px !important;
+}
+.toolbar2{
+   margin-top: 1%;
+    background: #3c4ca9;
+    color: rgba(255,255,255,.87);
+}
+.btn{
+    font-size: 15px;
+}
+.imgrowxs{
+    height: 949px;
+}
+.logoxs{
+        margin-top: 9%;
+}
+.textxs{
+         margin-top: 58%;
+    margin-left: 60%;
+    font-size: 14px;
+}
