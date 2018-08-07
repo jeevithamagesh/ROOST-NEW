@@ -1,5 +1,5 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit ,Input} from '@angular/core'
 import { ModelMethods } from '../lib/model.methods';
 import { BDataModelService } from '../service/bDataModel.service';
 
@@ -14,82 +14,30 @@ import { BDataModelService } from '../service/bDataModel.service';
  */
 
 @Component({
-    selector: 'bh-home',
-    templateUrl: './home.template.html',
+    selector: 'bh-carousel',
+    templateUrl: './carousel.template.html'
     
   
-
-    
 })
 
-export class homeComponent implements OnInit {
-      homeMessage = "message from parent";
-
+export class carouselComponent implements OnInit {
+    @Input() imageData: String;
+    // carouselMessage: string;
+    
     dm: ModelMethods;
     currentXsIndex = 0;
     splicedDataSet = [];
-    dataSet;
-    imageData;
-    // imageData = [
-    //     {
-    //         img: "assets/Web/photo1.jpg",
-    //         price: "$1,175,000",
-    //         top: "4313 Beverly Hills, CA 90210",
-    //         bottom: "1358 Ligula Street, Unit 12"
-    //     },
-    //     {
-    //         img: "assets/Web/photo2.jpg",
-    //         price: "$1,105,000",
-    //         top: "21 Shop St, San Francisco",
-    //         bottom: "Integer tempor luctus maximus"
-    //     },
-    //     {
-    //         img: "assets/Web/photo3.jpg",
-    //         price: "$1,125,000",
-    //         top: "Beverly Hills, CA 90210",
-    //         bottom: "Duis sollicitudin ante bibendum"
+    dataSet ;
 
-    //     },
-    //     {
-    //         img: "assets/Web/photo4.jpg",
-    //         price: "$1,185,000",
-    //         top: "132 04th St, San Francisco",
-    //         bottom: "Fusce quis libero nonorcious"
-    //     },
-    //     {
-    //         img: "assets/Web/photo5.jpg",
-    //         price: "$1,185,000",
-    //         top: "132 04th St, San Francisco",
-    //         bottom: "Fusce quis libero nonorcious"
-    //     },
-    //     {
-    //         img: "assets/Web/photo6.jpg",
-    //         price: "$1,185,000",
-    //         top: "132 04th St, San Francisco",
-    //         bottom: "Fusce quis libero nonorcious"
-    //     },
-    //     {
-    //         img: "assets/Web/photo7.jpg",
-    //         price: "$1,185,000",
-    //         top: "132 04th St, San Francisco",
-    //         bottom: "Fusce quis libero nonorcious"
-    //     },
-    //     {
-    //         img: "assets/Web/photo8.jpg",
-    //         price: "$1,185,000",
-    //         top: "132 04th St, San Francisco",
-    //         bottom: "Fusce quis libero nonorcious"
-    //     }
-    // ];
 
     constructor(private bdms: BDataModelService) {
         this.dm = new ModelMethods(bdms);
-        this.get('imagedatas');
     }
 
     ngOnInit() {
+console.log(this.imageData);
+this.dataSet=this.imageData;
     }
-
     changeDataSet(dir) {
         if (dir == 1) {
             this.dataSet.push(this.dataSet.shift());
@@ -105,11 +53,9 @@ export class homeComponent implements OnInit {
         }
     }
 
-    get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
+    get(dataModelName, filter ?, keys ?, sort ?, pagenumber ?, pagesize ?) {
         this.dm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
             result => {
-                this.imageData = result[0].images;
-                console.log(this.imageData);
                 // On Success code here
             },
             error => {
@@ -159,7 +105,7 @@ export class homeComponent implements OnInit {
             })
     }
 
-    delete(dataModelName, filter) {
+    delete (dataModelName, filter) {
         this.dm.delete(dataModelName, filter,
             result => {
                 // On Success code here

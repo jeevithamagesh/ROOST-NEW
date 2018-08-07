@@ -22,6 +22,12 @@ import { bsignatureComponent } from '../bsignatureComponent/bsignature.component
 import { btoggleoptionsComponent } from '../btoggleoptionsComponent/btoggleoptions.component';
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-loginComponent
+import { loginComponent } from '../loginComponent/login.component';
+//CORE_REFERENCE_IMPORT-imageserviceService
+import { imageserviceService } from '../services/imageservice/imageservice.service';
+//CORE_REFERENCE_IMPORT-carouselComponent
+import { carouselComponent } from '../carouselComponent/carousel.component';
 //CORE_REFERENCE_IMPORT-homeComponent
 import { homeComponent } from '../homeComponent/home.component';
 
@@ -56,6 +62,10 @@ export const appDeclarations = [
   bsignatureComponent,
   btoggleoptionsComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-loginComponent
+loginComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-carouselComponent
+carouselComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-homeComponent
 homeComponent,
   PageNotFoundComponent,
@@ -81,6 +91,8 @@ export const appProviders = [
   NotificationService,
   BAuthGuard,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-imageserviceService
+imageserviceService,
   LocalStorageService,
   PubSubService,
   BLoginService,
@@ -99,5 +111,5 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'home', component: homeComponent},{path: '', redirectTo: '/home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+export const appRoutes = [{path: 'login', component: loginComponent},{path: 'home', component: homeComponent},{path: 'carousel', component: carouselComponent},{path: '', redirectTo: 'login', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

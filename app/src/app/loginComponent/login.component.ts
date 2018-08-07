@@ -2,6 +2,8 @@
 import { Component, OnInit } from '@angular/core'
 import { ModelMethods } from '../lib/model.methods';
 import { BDataModelService } from '../service/bDataModel.service';
+import { BLoginService } from '../service/bLogin.service';
+import {Router} from '@angular/router'
 
 /**
 * Model import Example :
@@ -14,102 +16,37 @@ import { BDataModelService } from '../service/bDataModel.service';
  */
 
 @Component({
-    selector: 'bh-home',
-    templateUrl: './home.template.html',
-    
-  
-
-    
+    selector: 'bh-login',
+    templateUrl: './login.template.html'
 })
 
-export class homeComponent implements OnInit {
-      homeMessage = "message from parent";
-
+export class loginComponent implements OnInit {
     dm: ModelMethods;
-    currentXsIndex = 0;
-    splicedDataSet = [];
-    dataSet;
-    imageData;
-    // imageData = [
-    //     {
-    //         img: "assets/Web/photo1.jpg",
-    //         price: "$1,175,000",
-    //         top: "4313 Beverly Hills, CA 90210",
-    //         bottom: "1358 Ligula Street, Unit 12"
-    //     },
-    //     {
-    //         img: "assets/Web/photo2.jpg",
-    //         price: "$1,105,000",
-    //         top: "21 Shop St, San Francisco",
-    //         bottom: "Integer tempor luctus maximus"
-    //     },
-    //     {
-    //         img: "assets/Web/photo3.jpg",
-    //         price: "$1,125,000",
-    //         top: "Beverly Hills, CA 90210",
-    //         bottom: "Duis sollicitudin ante bibendum"
+    username;
 
-    //     },
-    //     {
-    //         img: "assets/Web/photo4.jpg",
-    //         price: "$1,185,000",
-    //         top: "132 04th St, San Francisco",
-    //         bottom: "Fusce quis libero nonorcious"
-    //     },
-    //     {
-    //         img: "assets/Web/photo5.jpg",
-    //         price: "$1,185,000",
-    //         top: "132 04th St, San Francisco",
-    //         bottom: "Fusce quis libero nonorcious"
-    //     },
-    //     {
-    //         img: "assets/Web/photo6.jpg",
-    //         price: "$1,185,000",
-    //         top: "132 04th St, San Francisco",
-    //         bottom: "Fusce quis libero nonorcious"
-    //     },
-    //     {
-    //         img: "assets/Web/photo7.jpg",
-    //         price: "$1,185,000",
-    //         top: "132 04th St, San Francisco",
-    //         bottom: "Fusce quis libero nonorcious"
-    //     },
-    //     {
-    //         img: "assets/Web/photo8.jpg",
-    //         price: "$1,185,000",
-    //         top: "132 04th St, San Francisco",
-    //         bottom: "Fusce quis libero nonorcious"
-    //     }
-    // ];
+password;
 
-    constructor(private bdms: BDataModelService) {
+
+    constructor(private bdms: BDataModelService, private loginservice: BLoginService,private router:Router) {
         this.dm = new ModelMethods(bdms);
-        this.get('imagedatas');
     }
 
     ngOnInit() {
-    }
 
-    changeDataSet(dir) {
-        if (dir == 1) {
-            this.dataSet.push(this.dataSet.shift());
-        }
-        else {
-            let temp = [];
-            temp.push(this.dataSet.pop());
-            for (let i = 0; i < this.dataSet.length; ++i) {
-                temp.push(this.dataSet[i]);
+    }
+     submit(){
+        this.loginservice.login(this.username,this.password).subscribe(data=>{
+            console.log(data);
+            if(data){
+                this.router.navigate(['/home']);
             }
-            this.dataSet = temp;
-
-        }
+        })
+      
     }
 
-    get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
+    get(dataModelName, filter ?, keys ?, sort ?, pagenumber ?, pagesize ?) {
         this.dm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
             result => {
-                this.imageData = result[0].images;
-                console.log(this.imageData);
                 // On Success code here
             },
             error => {
@@ -159,7 +96,7 @@ export class homeComponent implements OnInit {
             })
     }
 
-    delete(dataModelName, filter) {
+    delete (dataModelName, filter) {
         this.dm.delete(dataModelName, filter,
             result => {
                 // On Success code here

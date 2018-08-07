@@ -1,0 +1,506 @@
+{
+    "327e7fc8-df80-1fb1-0df6-db29aad4954f": {
+        "name": "FlexLayoutCol",
+        "guid": "327e7fc8-df80-1fb1-0df6-db29aad4954f",
+        "template": "<div fxLayout=\"column\" %style% %class% %fxFlex% %fxLayoutWrap% %fxLayoutGap% %fxLayoutAlign% %fxShow% %fxHide% %bCustomProps%></div>",
+        "designerTemplate": "<div class=\"column drop bkeeper-container-label\"></div>",
+        "paletteTemplate": "Flex Layout Column",
+        "templateUrl": "https://github.com/angular/flex-layout/wiki/fxLayout-API",
+        "htmlAttributes": [
+            {
+                "0": true,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutWrap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "fxLayoutAlign",
+                "_value": "center center",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxShow",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 1
+    },
+    "8b3b4321-e237-ae17-df73-ef1545ca365e": {
+        "name": "FlexLayoutRow",
+        "guid": "8b3b4321-e237-ae17-df73-ef1545ca365e",
+        "template": "<div fxLayout=\"row\" %style% %class% %fxFlex% %fxLayoutWrap% %fxLayoutGap% %fxLayoutAlign% %fxShow% %fxHide% %bCustomProps%></div>",
+        "designerTemplate": "<div class=\"row drop bkeeper-container-label\"></div>",
+        "paletteTemplate": "Flex Layout Row",
+        "templateUrl": "https://github.com/angular/flex-layout/wiki/fxLayout-API",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutWrap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "5": true,
+                "_key": "fxLayoutAlign",
+                "_value": "center center",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxShow",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 1
+    },
+    "bfadff1f-fc9b-d92a-d6af-da72da8856d2": {
+        "name": "FlexLayoutCol",
+        "guid": "bfadff1f-fc9b-d92a-d6af-da72da8856d2",
+        "template": "<div fxLayout=\"column\" %style% %class% %fxFlex% %fxLayoutWrap% %fxLayoutGap% %fxLayoutAlign% %fxShow% %fxHide% %bCustomProps%></div>",
+        "designerTemplate": "<div class=\"column drop bkeeper-container-label\"></div>",
+        "paletteTemplate": "Flex Layout Column",
+        "templateUrl": "https://github.com/angular/flex-layout/wiki/fxLayout-API",
+        "htmlAttributes": [
+            {
+                "0": true,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutWrap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "fxLayoutAlign",
+                "_value": "center center",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxShow",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 1
+    },
+    "6d8c33e1-f50d-0b0e-6884-a3bb28fb28d5": {
+        "name": "NG-card",
+        "guid": "6d8c33e1-f50d-0b0e-6884-a3bb28fb28d5",
+        "template": "<mat-card %bCustomProps% %style% %class%></mat-card>",
+        "designerTemplate": "<div class=\"ad-cards ad-charts-border drop ad-card ad-card-shadow bkeeper-container-label\"><i style=\"font-size: 18px; position:absolute; top:0%; left:75px;\" class=\"material-icons validate icons-events\">credit_card</i></div>",
+        "paletteTemplate": "Card",
+        "templateUrl": "https://material.angular.io/components/card/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": true,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 1
+    },
+    "1a81ebea-3ad8-8f2e-50d1-ff929cd82c05": {
+        "name": "FlexLayoutCol",
+        "guid": "1a81ebea-3ad8-8f2e-50d1-ff929cd82c05",
+        "template": "<div fxLayout=\"column\" %style% %class% %fxFlex% %fxLayoutWrap% %fxLayoutGap% %fxLayoutAlign% %fxShow% %fxHide% %bCustomProps%></div>",
+        "designerTemplate": "<div class=\"column drop bkeeper-container-label\"></div>",
+        "paletteTemplate": "Flex Layout Column",
+        "templateUrl": "https://github.com/angular/flex-layout/wiki/fxLayout-API",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxFlex",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutWrap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxLayoutGap",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "fxLayoutAlign",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxShow",
+                "_value": "true",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "fxHide",
+                "_value": "false",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 1
+    },
+    "a02f6e2a-fae9-b98b-1da0-a57906d6ac7c": {
+        "name": "NG-H2",
+        "guid": "a02f6e2a-fae9-b98b-1da0-a57906d6ac7c",
+        "template": "<h2 %bCustomProps% %style% %class%>%H2 Text%</h2>",
+        "designerTemplate": "<div class=\"ad-header-elements ad-h2\">h2</div>",
+        "paletteTemplate": "h2",
+        "templateUrl": "https://www.w3schools.com/tags/tag_hn.asp",
+        "htmlAttributes": [
+            {
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": true,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "H2 Text",
+                "_value": "LOGIN",
+                "_type": "a",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 5
+    },
+    "da8d76a2-c361-f362-3862-301c2c2ca2ca": {
+        "name": "NG-Input",
+        "guid": "da8d76a2-c361-f362-3862-301c2c2ca2ca",
+        "template": "<mat-form-field %color% %style% %class%><input matInput  %[(ngModel)]% %name% %type% %placeholder% %value% %required% %bCustomProps%></mat-form-field>",
+        "designerTemplate": "<div class=\"ad-textfield ad-height\">text</div>",
+        "paletteTemplate": "Input",
+        "templateUrl": "https://material.angular.io/components/input/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": true,
+                "_key": "placeholder",
+                "_value": "Username",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "value",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "required",
+                "_value": "required",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "[(ngModel)]",
+                "_value": "username",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "6": false,
+                "_key": "color",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "7": false,
+                "_key": "name",
+                "_value": "username",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "_key": "type",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 5
+    },
+    "5d3cd2f9-d89c-60ff-24c6-5fddc69436d1": {
+        "name": "NG-Input",
+        "guid": "5d3cd2f9-d89c-60ff-24c6-5fddc69436d1",
+        "template": "<mat-form-field %color% %style% %class%><input matInput  %[(ngModel)]% %name% %type% %placeholder% %value% %required% %bCustomProps%></mat-form-field>",
+        "designerTemplate": "<div class=\"ad-textfield ad-height\">text</div>",
+        "paletteTemplate": "Input",
+        "templateUrl": "https://material.angular.io/components/input/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": false,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "placeholder",
+                "_value": "Password",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "value",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": false,
+                "_key": "required",
+                "_value": "required",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "[(ngModel)]",
+                "_value": "password",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "6": false,
+                "_key": "color",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "7": false,
+                "_key": "name",
+                "_value": "password",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "8": false,
+                "_key": "type",
+                "_value": "password",
+                "_type": "kv",
+                "_attrDef": "p"
+            }
+        ],
+        "type": 5
+    },
+    "06b74e9e-d73b-f279-9483-5a62ff4e19ec": {
+        "name": "NG-RaisedButton",
+        "guid": "06b74e9e-d73b-f279-9483-5a62ff4e19ec",
+        "template": "<button mat-raised-button %style% %class% %bCustomProps% %color% %(click)%>%buttonname%</button>",
+        "designerTemplate": "<div class=\"ad-raised-button\"></div>",
+        "paletteTemplate": "Raised Button",
+        "templateUrl": "https://material.angular.io/components/button/overview",
+        "htmlAttributes": [
+            {
+                "0": false,
+                "_key": "style",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "1": true,
+                "_key": "class",
+                "_value": "",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "2": false,
+                "_key": "buttonname",
+                "_value": "login",
+                "_type": "a",
+                "_attrDef": "p"
+            },
+            {
+                "3": false,
+                "_key": "color",
+                "_value": "primary",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "4": true,
+                "_key": "(click)",
+                "_value": "submit()",
+                "_type": "kv",
+                "_attrDef": "p"
+            },
+            {
+                "5": false,
+                "_key": "[routerLink]",
+                "_value": "'home'",
+                "_type": "kv",
+                "_attrDef": "c"
+            }
+        ],
+        "type": 5
+    }
+}

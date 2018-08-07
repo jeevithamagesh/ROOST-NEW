@@ -3,10 +3,10 @@ export const environment = {
     "name": "dev",
     "properties": {
         "production": false,
-        "baseUrl": "http://localhost:3000/bhive-art",
-        "tenantName": "jee",
-        "appName": "jee-app",
-        "namespace": "com.neutrinos.jee.jee-app",
+        "baseUrl": "http://localhost:3000/bhive-art/",
+        "tenantName": "newtenant",
+        "appName": "newapp",
+        "namespace": "carousel app",
         "isNotificationEnabled": false,
         "googleMapKey": "AIzaSyCSTnVwijjv0CFRA4MEeS-H6PAQc87LEoU",
         "firebaseSenderId": "FIREBASE_SENDER_ID",
@@ -15,8 +15,8 @@ export const environment = {
         "databaseURL": "FIREBASE_DATABASE_URL",
         "storageBucket": "FIREBASE_STORAGE_BUCKET",
         "messagingSenderId": "FIREBASE_SENDER_ID",
-        "appDataSource": "APP_DATA_SOURCE",
-        "appAuthenticationStrategy": "basicAuth",
+        "appDataSource": "new-rt",
+        "appAuthenticationStrategy": "localAuth",
         "basicAuthUser": "username",
         "basicAuthPassword": "password"
     }
