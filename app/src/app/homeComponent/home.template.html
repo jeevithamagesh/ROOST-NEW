@@ -1,27 +1,6 @@
 <div id="angularRoot">
   <div fxLayout="column" style="padding:10px" fxFlex="100" fxShow="true" fxHide="false">
-    <div fxLayout="row" fxShow="true" fxHide="false">
-      <mat-toolbar style="background-color: #3c4ca9;" class="toolbar1">
-        <div fxLayout="column" fxFlex="50" fxLayoutAlign="start start" fxShow="true" fxHide="false">
-          <div fxLayout="row" fxFlex="100" fxShow="true" fxHide="false">
-            <button mat-button="" style="  font-size: 19px;">Register</button>
-            <button mat-button="" style="  font-size: 19px;">Login</button>
-          </div>
-        </div>
-        <div fxLayout="column" fxFlex="50" fxLayoutAlign="end end" fxShow="true" fxHide="false" fxHide.xs="true" fxHide.sm="true">
-          <div fxLayout="row" fxFlex="100" fxShow="true" fxHide="false">
-            <img imgSrc="Web/phone-64.png" class="phone">
-            <button mat-button="" style="    font-size: 19px;">9600569582</button>
-            <img imgSrc="Web/message-64.png" class="message">
-            <button mat-button="" style="  font-size: 19px;">hello@roost.com</button>
-            <img imgSrc="Web/google-plus-64.png" class="google">
-            <img imgSrc="Web/twitter-64.png" class="twitter">
-            <img imgSrc="Web/facebook-64.png" class="facebook">
-          </div>
-        </div>
-      </mat-toolbar>
-    </div>
-    <div fxLayout="row" fxLayoutAlign="start" fxShow="true" fxHide="false" fxFlex.xs="none">
+    <div fxLayout="row" fxLayoutAlign="start" fxShow="true" fxHide="false" fxFlex.xs="none" *ngIf="false">
       <mat-toolbar ngClass.xs="logoxs" class="toolbar2">
         <div fxLayout="column" fxFlex="50" fxLayoutAlign="start" fxShow="true" fxHide="false">
           <div fxLayout="row" fxFlex="100" fxLayoutAlign="start start" fxShow="true" fxHide="false">
@@ -29,103 +8,56 @@
             <p>ROOST</p>
           </div>
         </div>
-        <div fxLayout="column" fxFlex="50" fxLayoutAlign="end end" fxShow="true" fxHide="false" fxHide.xs="true" fxHide.sm="true">
-          <div fxLayout="row" fxFlex="100" fxLayoutAlign="end end" fxShow="true" fxHide="false" fxHide.xs="true">
-            <button mat-button="" class="btn">HOME</button>
-            <button mat-button="" class="btn">LISTINGS</button>
-            <button mat-button="" class="btn">SUBMIT</button>
-            <button mat-button="" class="btn">MORTGAGES</button>
-            <button mat-button="" class="btn">AGENTS</button>
-            <button mat-button="" class="btn">CONTACT</button>
-            <button mat-button="" class="btn">MORE</button>
-          </div>
-        </div>
       </mat-toolbar>
     </div>
-    <div fxLayout="column" fxFlex="100" fxLayoutAlign="center center" fxShow="true" fxHide="false" fxHide.xs="true">
-      <div fxLayout="row" fxFlex="100" fxLayoutAlign="center center" fxShow="true" fxHide="false">
-        <button mat-raised-button="" style=" height: 41px;     top: 193px; " class="rent" color="accent">RENT</button>
-        <mat-form-field style="    background-color:white;   font-size: 14px !important;  height: 41px !important;     top: 193px;     width: 593px;" class="input">
+    <mat-sidenav-container style="  background-color: #3F51B5;" fullscreen="fullscreen">
+      <div fxLayout="row" fxShow="true" fxHide="false">
+        <mat-toolbar style="background-color: #3c4ca9;" class="toolbar1">
+          <div fxLayout="column" fxLayoutAlign="start start" fxShow="true" fxHide="false" fxHide.gt-xs="true" fxFlex.xs="50" fxFlex.gt-xs="0">
+            <mat-icon style="cursor:pointer;" class="menu" (click)="sidenav.toggle()">menu</mat-icon>
+          </div>
+          <div fxLayout="column" fxFlex="50" fxLayoutAlign="start start" fxShow="true" fxHide="false">
+            <div fxLayout="row" fxFlex="100" fxShow="true" fxHide="false">
+              <button mat-button="" style="  font-size: 19px;">Register</button>
+              <button mat-button="" style="  font-size: 19px;">Login</button>
+            </div>
+          </div>
+          <div fxLayout="column" fxFlex="50" fxLayoutAlign="end end" fxShow="true" fxHide="false" fxHide.xs="true" fxHide.sm="true">
+            <div fxLayout="row" fxFlex="100" fxShow="true" fxHide="false">
+              <mat-icon class="phone">phone</mat-icon>
+              <button mat-button="" style="    font-size: 19px;    margin-left: -3%;">9600569582</button>
+              <mat-icon>mail</mat-icon>
+              <button mat-button="" style="  font-size: 19px;margin-left: -3%;">hello@roost.com</button>
+              <img imgSrc="Web/google-plus-64.png" class="google">
+              <img imgSrc="Web/twitter-64.png" class="twitter">
+              <img imgSrc="Web/facebook-64.png" class="facebook">
+            </div>
+          </div>
+        </mat-toolbar>
+      </div>
+      <div fxLayout="row" style="padding:2%" fxFlex="none" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+        <button mat-raised-button="" style="height: 41px !important;      margin-top: 8%;      " class="rent" color="accent">RENT</button>
+        <mat-form-field style="margin-top: 8%;background-color:white;   font-size: 14px !important;  height: 41px !important;        width: 593px;" class="hidePlaceHolder">
           <input matInput="" placeholder="Enter any feature">
         </mat-form-field>
       </div>
-    </div>
-    <div fxLayout="row" fxFlex="100" fxLayoutAlign="start center" fxShow="true" fxHide="false" fxHide.xs="true"></div>
-    <div fxLayout="row" fxShow="true" fxHide="false">
-      <div fxLayout="column" fxLayoutAlign="center center" fxShow="true" fxHide="true">
-        <p ngClass.xs="textxs" style="color:white;    margin-bottom: 24%    font-size: 24px;">Properties nearby your location</p>
+      <div fxLayout="row" fxShow="true" fxHide="false">
+        <bh-carousel [imageData]="imageData" style="width:100%" *ngIf="imageData"></bh-carousel>
       </div>
-      <bh-carousel [imageData]="imageData" style="width:100%" *ngIf="imageData"></bh-carousel>
-    </div>
-    <div fxLayout="row" style="    padding-top: 11px;" fxShow="false" fxHide="true" fxHide.xs="false" ngClass.gt-xs="imgClass300" ngClass.xs="imgClass200" *ngIf="false">
-      <div fxLayout="column" style="background:white;padding:5px;" fxFlex="100" fxShow="true" fxHide="false">
-        <div fxLayout="column" fxFlex="100" fxLayoutAlign="end none" fxShow="true" fxHide="false" [ngStyle]="{ &apos;background-image&apos;: &apos;url(&apos; + dataSet[currentXsIndex].img + &apos;)&apos;, &apos;background-size&apos;: &apos;cover&apos;}">
-          <div fxLayout="column" style="padding-bottom:5px;" fxFlex="20" fxShow="true" fxHide="false">
-            <h4 class="price-font">{{dataSet[currentXsIndex].price}}</h4>
-          </div>
+      <footer>
+        <div fxLayout="row" style="width:100%" class="footer" fxFlex="100" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+          <p>Copyright &#xA9; 2018 Neutrinos</p>
         </div>
-      </div>
-    </div>
-    <div fxLayout="row" style="height:20px;margin-top:10px;" fxFlex="100" fxLayoutGap="3px;" fxLayoutAlign="center center" fxShow="false" fxHide="false" fxHide.xs="false" fxFlex.xs="none" *ngIf="false">
-      <div fxLayout="column" fxFlex="5" fxShow="true" fxHide="false" *ngFor="let row of dataSet; let i=index;">
-        <button [ngClass]="{&apos;rounded-slid-act&apos;:currentXsIndex == i, &apos;rounded-slid-deact&apos;:currentXsIndex != i}" (click)="currentXsIndex=i"></button>
-      </div>
-    </div>
-    <div fxLayout="row" style="margin: 20px 20px 0 20px;    padding-top: 11px;" fxFlex="100" fxLayoutGap="10px" fxLayoutAlign="space-around center" fxShow="true" fxHide="false" fxHide.lt-md="false" fxHide.xs="true" *ngIf="false">
-      <div fxLayout="column" fxFlex="5" fxLayoutAlign="center center" fxShow="true" fxHide="false">
-        <button class="round-button" (click)="changeDataSet(-1)">
-          <i class="material-icons">navigate_before</i>
-        </button>
-        <button mat-fab="" color="white" (click)="changeDataSet(-1)">arrow</button>
-      </div>
-      <div fxLayout="column" style="background:white;padding:3px;" fxFlex="90" fxShow="true" fxHide="false" *ngFor="let row of dataSet.slice(0,2);let i=index;">
-        <div fxLayout="column" fxFlex="100" fxLayoutAlign="end none" fxShow="true" fxHide="false" [ngStyle]="{ &apos;background-image&apos;: &apos;url(&apos; + row.img + &apos;)&apos;, &apos;background-size&apos;: &apos;cover&apos;}" ngClass.xs="imgrowxs"
-          ngClass.gt-xs="imgClass200">
-          <div fxLayout="column" style="padding-bottom:20px;" fxFlex="20" fxShow="true" fxHide="false">
-            <h4 class="price-font">{{row.price}}</h4>
-          </div>
+      </footer>
+      <mat-sidenav #sidenav="" [(opened)]="opened" style="  top: 56px;" class="sidenav" (toggle)="sidenav.toggle()">
+        <div fxLayout="column" fxShow="true" fxHide="false">
+          <mat-list>
+            <mat-list-item style="color:white;cursor:pointer;">Home</mat-list-item>
+            <mat-list-item style="color:white;cursor:pointer;">Dashboard</mat-list-item>
+            <mat-list-item style="color:white;cursor:pointer;">Logout</mat-list-item>
+          </mat-list>
         </div>
-        <div fxLayout="column" style="margin-top:10px;height:20px;" fxFlex="100" fxShow="true" fxHide="false"><span class="top">{{row.top}}</span></div>
-        <div fxLayout="column" style="height:20px;margin-bottom:10px;" fxFlex="100" fxShow="true" fxHide="false"><span class="bottom">{{row.bottom}}</span>
-        </div>
-      </div>
-      <div fxLayout="column" fxFlex="5" fxLayoutAlign="center center" fxShow="true" fxHide="false">
-        <button class="round-button" (click)="changeDataSet(1)">
-          <i class="material-icons">navigate_next</i>
-        </button>
-      </div>
-    </div>
-    <div fxLayout="row" style="margin: 30px 30px 0 30px;    padding-top: 11px;" fxFlex="100" fxLayoutGap="10px" fxLayoutAlign="space-around center" fxShow="true" fxHide="false" fxHide.lt-md="true" *ngIf="false">
-      <div fxLayout="column" fxFlex="5" fxLayoutAlign="center center" fxShow="true" fxHide="false">
-        <button class="round-button" (click)="changeDataSet(-1)">
-          <i class="material-icons">navigate_before</i>
-        </button>
-      </div>
-      <div fxLayout="column" style="background:white;padding:3px;" fxFlex="90" fxShow="true" fxHide="false" *ngFor="let row of dataSet.slice(0,4);let i=index;">
-        <div fxLayout="column" fxFlex="100" fxLayoutAlign="end none" fxShow="true" fxHide="false" [ngStyle]="{ &apos;background-image&apos;: &apos;url(&apos; + row.img + &apos;)&apos;, &apos;background-size&apos;: &apos;cover&apos;}" ngClass.lg="imgClass200"
-          ngClass.gt-lg="imgClass350" ngClass.lt-lg="imgClass150">
-          <div fxLayout="column" style="padding-bottom:20px;" fxFlex="20" fxShow="true" fxHide="false">
-            <h4 class="price-font">{{row.price}}</h4>
-          </div>
-        </div>
-        <div fxLayout="column" style="margin-top:10px;height:20px;" fxFlex="100" fxShow="true" fxHide="false"><span class="top">{{row.top}}</span>
-        </div>
-        <div fxLayout="column" style="height:20px;margin-bottom:10px;" fxFlex="100" fxShow="true" fxHide="false"><span class="bottom">{{row.bottom}}</span>
-        </div>
-      </div>
-      <div fxLayout="column" fxFlex="5" fxLayoutAlign="center center" fxShow="true" fxHide="false">
-        <button class="round-button" (click)="changeDataSet(1)">
-          <i class="material-icons">navigate_next</i>
-        </button>
-      </div>
-    </div>
-    <div fxLayout="row" fxFlex="100" fxShow="true" fxHide="false" fxHide.xs="true"></div>
-    <div fxLayout="column" fxShow="true" fxHide="true">
-      <div fxLayout="row" style="background-color: #3c4ca9;" fxFlex="100" fxLayoutAlign="center end" fxShow="true" fxHide="false">
-        <footer>
-          <p>created @neutrinos</p>
-        </footer>
-      </div>
-    </div>
+      </mat-sidenav>
+    </mat-sidenav-container>
   </div>
 </div>

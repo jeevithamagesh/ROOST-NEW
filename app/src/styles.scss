@@ -22,34 +22,8 @@ body{
     font-size: 13px;
     margin: 0 0 5px;
 }
-.round-button{
-    cursor: pointer;
-    height:41px;
-    width:41px;
-    border: none;
-    color: white;
-    border-radius: 50%;
-    background: rgba(0,0,0,.1);
-}
-.rounded-slid-act{
-    cursor: pointer;
-    border: 0;
-    font-size: 0;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 0 5px;
-    background-color: white;
-}
-.rounded-slid-deact{
-    cursor: pointer;
-    border: 0;
-    font-size: 0;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 0 5px;
-    background-color: rgba(0,0,0,.2);
+.arrow{
+padding:1%;
 }
 .imgClass350{
     height:350px;
@@ -64,7 +38,7 @@ body{
     height:200px;
        }
 .imgClass150{
-    height:150px;
+    height:250px;
 }
 .google{
           width: 30px;
@@ -84,28 +58,19 @@ height: 22px;
     margin-top: 1%;
   margin-left:3%;
 }
-.message{
-   width: 28px;
-    height: 25px;
-   margin-left: 2%;
-    margin-right: -2%; 
-        margin-top: 1%;
-}
-.phone{
-   width: 28px;
-    height: 25px;
-   margin-left: -4%;
-    margin-right: -2%;
-}
+
+
 .logo{
         width: 64px;
     height: 50px;
     margin-top: 2%;
 }
 .toolbar1{
-    background: #3c4ca9;
+    // background: #3c4ca9;
+     background: #273690;
     color: rgba(255,255,255,.87);
     font-size: 19px !important;
+    //   width: 98.5% !important;
 }
 .toolbar2{
    margin-top: 3%;
@@ -141,4 +106,33 @@ height: 22px;
 }
 .mat-form-field-placeholder{
     padding-left: 15px;
+}
+.footer{
+       background: #273690;
+                //    width: 98.5% !important;
+    color: white;
+    bottom: 0px;
+    position: fixed;
+}
+.mat-icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    height: 25px;
+    width: 24px;
+   margin-top: 0%;
+    margin-left: 0%;
+    padding: 1%;
+}
+ .sidenav{
+         background: rgba(11, 14, 117, 0.72);
+         width: 142px;
+     position: absolute !important;
+     top:56px !important;
+ }
+ .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder{
+    display : none !important;
+}
+.mat-focused .hidePlaceHolder{
+    display : none !important;
 }

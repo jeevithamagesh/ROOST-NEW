@@ -1,8 +1,9 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
-import { Component, OnInit ,Input} from '@angular/core'
+import { Component, OnInit, Input } from '@angular/core'
 import { ModelMethods } from '../lib/model.methods';
 import { BDataModelService } from '../service/bDataModel.service';
-
+import { MediaChange, ObservableMedia } from '@angular/flex-layout';
+import { Subscription } from 'rxjs/Subscription';
 /**
 * Model import Example :
 * import { HERO } from '../models/hero.model';
@@ -16,27 +17,46 @@ import { BDataModelService } from '../service/bDataModel.service';
 @Component({
     selector: 'bh-carousel',
     templateUrl: './carousel.template.html'
-    
-  
+
+
 })
 
 export class carouselComponent implements OnInit {
     @Input() imageData: String;
-    // carouselMessage: string;
-    
+    watcher: Subscription;
+    activeMediaQuery = "";
+
     dm: ModelMethods;
     currentXsIndex = 0;
     splicedDataSet = [];
-    dataSet ;
+    dataSet;
+    limitImage;
 
 
-    constructor(private bdms: BDataModelService) {
+    constructor(private bdms: BDataModelService, public media: ObservableMedia) {
         this.dm = new ModelMethods(bdms);
+
     }
 
     ngOnInit() {
-console.log(this.imageData);
-this.dataSet=this.imageData;
+        this.dataSet = this.imageData;
+    }
+    ngDoCheck() {
+        this.watcher = this.media.subscribe((change: MediaChange) => {
+            this.activeMediaQuery = change ? `'${change.mqAlias}' = (${change.mediaQuery})` : '';
+            if (change.mqAlias == 'xs') {
+
+                this.limitImage = 1;
+            }
+            else if (change.mqAlias == 'sm') {
+
+                this.limitImage = 2;
+            } else {
+                this.limitImage = 4;
+                    }
+
+        });
+
     }
     changeDataSet(dir) {
         if (dir == 1) {
@@ -53,7 +73,7 @@ this.dataSet=this.imageData;
         }
     }
 
-    get(dataModelName, filter ?, keys ?, sort ?, pagenumber ?, pagesize ?) {
+    get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.dm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
@@ -105,7 +125,7 @@ this.dataSet=this.imageData;
             })
     }
 
-    delete (dataModelName, filter) {
+    delete(dataModelName, filter) {
         this.dm.delete(dataModelName, filter,
             result => {
                 // On Success code here
