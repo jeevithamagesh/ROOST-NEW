@@ -13,5 +13,10 @@
         "appPageName": "login",
         "componentName": "loginComponent",
         "isEntry": false
+    },
+    "f6e868f1-e786-8156-6027-994d52750be1": {
+        "appPageName": "demo",
+        "componentName": "demoComponent",
+        "isEntry": false
     }
 }

@@ -11,11 +11,25 @@
         },
         {
             "path": "home",
-            "component": "homeComponent"
+            "component": "homeComponent",
+            "pathMatch": "",
+            "redirectTo": "",
+            "resolve": "",
+            "data": "",
+            "canActivate": ""
         },
         {
             "path": "carousel",
-            "component": "carouselComponent"
+            "component": "carouselComponent",
+            "pathMatch": "",
+            "redirectTo": "",
+            "resolve": "",
+            "data": "",
+            "canActivate": ""
+        },
+        {
+            "path": "demo",
+            "component": "demoComponent"
         },
         {
             "path": "''",
