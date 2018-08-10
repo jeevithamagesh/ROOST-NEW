@@ -1,7 +1,9 @@
 /*DEFAULT GENERATED TEMPLATE. DO NOT CHANGE SELECTOR TEMPLATE_URL AND CLASS NAME*/
-import { Component, OnInit, Input } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 import { ModelMethods } from '../lib/model.methods';
 import { BDataModelService } from '../service/bDataModel.service';
+import { imageserviceService } from '../services/imageservice/imageservice.service';
+import { carouselserviceService } from '../services/carouselservice/carouselservice.service';
 
 /**
 * Model import Example :
@@ -14,47 +16,29 @@ import { BDataModelService } from '../service/bDataModel.service';
  */
 
 @Component({
-    selector: 'bh-carousel',
-    templateUrl: './carousel.template.html'
-
-
+    selector: 'bh-demo',
+    templateUrl: './demo.template.html'
 })
 
-export class carouselComponent implements OnInit {
-    @Input() imageData: String;
-    @Input() limitImage: any;
-
+export class demoComponent implements OnInit {
     dm: ModelMethods;
-    currentXsIndex = 0;
-    splicedDataSet = [];
-    dataSet;
+    imageData;
+    limit;
 
-
-    constructor(private bdms: BDataModelService) {
+    constructor(private bdms: BDataModelService,private imgService:imageserviceService,private cService:carouselserviceService) {
         this.dm = new ModelMethods(bdms);
-
     }
 
     ngOnInit() {
-        this.dataSet = this.imageData;
+        this.imageData=this.imgService.getImages();
+
 
     }
-    changeDataSet(dir) {
-        if (dir == 1) {
-            this.dataSet.push(this.dataSet.shift());
-        }
-        else {
-            let temp = [];
-            temp.push(this.dataSet.pop());
-            for (let i = 0; i < this.dataSet.length; ++i) {
-                temp.push(this.dataSet[i]);
-            }
-            this.dataSet = temp;
-
-        }
+    ngDoCheck(){
+        this.limit=this.cService.assignLimit(1, 2, 4);
     }
 
-    get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
+    get(dataModelName, filter ?, keys ?, sort ?, pagenumber ?, pagesize ?) {
         this.dm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,
             result => {
                 // On Success code here
@@ -106,7 +90,7 @@ export class carouselComponent implements OnInit {
             })
     }
 
-    delete(dataModelName, filter) {
+    delete (dataModelName, filter) {
         this.dm.delete(dataModelName, filter,
             result => {
                 // On Success code here

@@ -83,7 +83,7 @@
             {
                 "1": false,
                 "_key": "class",
-                "_value": "imgcar",
+                "_value": "",
                 "_type": "kv",
                 "_attrDef": "p"
             },
@@ -151,6 +151,7 @@
                 "_attrDef": "c"
             },
             {
+                "11": false,
                 "_key": "*ngIf",
                 "_value": "false",
                 "_type": "kv",
@@ -403,6 +404,7 @@
                 "_attrDef": "p"
             },
             {
+                "3": false,
                 "_key": "fxLayoutWrap",
                 "_value": "",
                 "_type": "kv",
@@ -429,6 +431,7 @@
                 "_attrDef": "p"
             },
             {
+                "7": false,
                 "_key": "fxHide",
                 "_value": "false",
                 "_type": "kv",
@@ -608,6 +611,7 @@
                 "_attrDef": "c"
             },
             {
+                "9": false,
                 "_key": "fxFlex.xs",
                 "_value": "75",
                 "_type": "kv",
@@ -916,13 +920,6 @@
                 "_value": "changeDataSet(-1)",
                 "_type": "kv",
                 "_attrDef": "p"
-            },
-            {
-                "5": false,
-                "_key": "ngClass.xs",
-                "_value": "arrow",
-                "_type": "kv",
-                "_attrDef": "c"
             }
         ],
         "type": 5
@@ -969,13 +966,6 @@
                 "_value": "changeDataSet(1)",
                 "_type": "kv",
                 "_attrDef": "p"
-            },
-            {
-                "5": false,
-                "_key": "ngClass.xs",
-                "_value": "arrow",
-                "_type": "kv",
-                "_attrDef": "c"
             }
         ],
         "type": 5

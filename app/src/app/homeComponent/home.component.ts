@@ -2,7 +2,8 @@
 import { Component, OnInit } from '@angular/core'
 import { ModelMethods } from '../lib/model.methods';
 import { BDataModelService } from '../service/bDataModel.service';
-import { imageserviceService } from '../services/imageservice/imageservice.service'
+import { imageserviceService } from '../services/imageservice/imageservice.service';
+import { carouselserviceService } from '../services/carouselservice/carouselservice.service';
 
 /**
 * Model import Example :
@@ -25,14 +26,19 @@ export class homeComponent implements OnInit {
     splicedDataSet = [];
     dataSet;
     imageData;
+    limit;
 
-    constructor(private bdms: BDataModelService, private imgService: imageserviceService) {
+    constructor(private bdms: BDataModelService, private imgService: imageserviceService, private cService: carouselserviceService) {
         this.dm = new ModelMethods(bdms);
         // this.get('imagedatas');
     }
 
     ngOnInit() {
         this.imageData = this.imgService.getImages();
+    }
+    ngDoCheck() {
+        console.log(this.cService.assignLimit(1, 2, 4));
+        this.limit = this.cService.assignLimit(1, 2, 4);
     }
 
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {

@@ -22,6 +22,10 @@ import { bsignatureComponent } from '../bsignatureComponent/bsignature.component
 import { btoggleoptionsComponent } from '../btoggleoptionsComponent/btoggleoptions.component';
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-demoComponent
+import { demoComponent } from '../demoComponent/demo.component';
+//CORE_REFERENCE_IMPORT-carouselserviceService
+import { carouselserviceService } from '../services/carouselservice/carouselservice.service';
 //CORE_REFERENCE_IMPORT-loginComponent
 import { loginComponent } from '../loginComponent/login.component';
 //CORE_REFERENCE_IMPORT-imageserviceService
@@ -62,6 +66,8 @@ export const appDeclarations = [
   bsignatureComponent,
   btoggleoptionsComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-demoComponent
+demoComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-loginComponent
 loginComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-carouselComponent
@@ -91,6 +97,8 @@ export const appProviders = [
   NotificationService,
   BAuthGuard,
   //CORE_REFERENCE_PUSH_TO_PRO_ARRAY
+//CORE_REFERENCE_PUSH_TO_PRO_ARRAY-carouselserviceService
+carouselserviceService,
 //CORE_REFERENCE_PUSH_TO_PRO_ARRAY-imageserviceService
 imageserviceService,
   LocalStorageService,
@@ -111,5 +119,5 @@ imageserviceService,
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'login', component: loginComponent},{path: 'home', component: homeComponent},{path: 'carousel', component: carouselComponent},{path: '', redirectTo: 'login', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+export const appRoutes = [{path: 'login', component: loginComponent},{path: 'home', component: homeComponent},{path: 'carousel', component: carouselComponent},{path: 'demo', component: demoComponent},{path: '', redirectTo: 'login', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

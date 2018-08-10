@@ -454,7 +454,7 @@
             },
             {
                 "_key": "html",
-                "_value": "<bh-carousel [imageData]=\"imageData\" style=\"width:100%\" *ngIf=\"imageData\"></bh-carousel>",
+                "_value": "<bh-carousel [imageData]=\"imageData\" [limitImage]=\"limit\" style=\"width:100%\" *ngIf=\"imageData\"></bh-carousel>",
                 "_type": "a",
                 "_attrDef": "p"
             }

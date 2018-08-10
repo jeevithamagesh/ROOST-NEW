@@ -22,9 +22,6 @@ body{
     font-size: 13px;
     margin: 0 0 5px;
 }
-.arrow{
-padding:1%;
-}
 .imgClass350{
     height:350px;
 }
@@ -58,33 +55,13 @@ height: 22px;
     margin-top: 1%;
   margin-left:3%;
 }
-
-
-.logo{
-        width: 64px;
-    height: 50px;
-    margin-top: 2%;
-}
 .toolbar1{
-    // background: #3c4ca9;
-     background: #273690;
+   background: #273690;
     color: rgba(255,255,255,.87);
     font-size: 19px !important;
-    //   width: 98.5% !important;
-}
-.toolbar2{
-   margin-top: 3%;
-  background-color: #3F51B5;
-    color: rgba(255,255,255,.87);
-}
-.btn{
-        font-size: 19px;
 }
 .imgrowxs{
     height: 949px;
-}
-.logoxs{
-        margin-top: 9%;
 }
 .textxs{
          margin-top: 15% !important;
@@ -98,7 +75,7 @@ height: 22px;
   display: none;
     }
 .mat-form-field-infix {
-    // padding: 1.4375em 0;
+   
     border-top: .84375em solid transparent;
     top: -3.5px;
     font-size: 14px;
@@ -109,8 +86,7 @@ height: 22px;
 }
 .footer{
        background: #273690;
-                //    width: 98.5% !important;
-    color: white;
+            color: white;
     bottom: 0px;
     position: fixed;
 }
